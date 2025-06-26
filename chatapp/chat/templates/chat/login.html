@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Enter your username</h2>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Enter your username" required>
+        <button type="submit">Join Chat</button>
+    </form>
+</body>
+</html>
